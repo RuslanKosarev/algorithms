@@ -5,18 +5,20 @@
 def tree_height(parents):
     n = len(parents)
 
-    a = [[] for i in range(n + 1)]
+    a = [[] for _ in range(n + 1)]
+
     for i in range(n):
         a[parents[i]] += [i]
 
-    root, lev = a[-1], 0
+    root, height = a[-1], 0
+
     while len(root):
         q, root = root, []
         for b in q:
             root += a[b]
-        lev += 1
+        height += 1
 
-    return lev
+    return height
 
 
 tree = [4, -1, 4, 1, 1]

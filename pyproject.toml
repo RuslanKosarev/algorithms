@@ -2,7 +2,7 @@
 name = "algorithms"
 version = "0.1.0"
 description = ""
-authors = ["korus <ruslan.kosarev@smedx.com>"]
+authors = ["korus <ruslan.kosarev@gmail.com>"]
 
 [tool.poetry.dependencies]
 python = "^3.8"

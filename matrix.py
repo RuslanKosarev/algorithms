@@ -21,7 +21,4 @@ for d in range(1, N):
         a[d+k, N-1-k] = count
         print(a)
 
-print(a)
-
-
 
